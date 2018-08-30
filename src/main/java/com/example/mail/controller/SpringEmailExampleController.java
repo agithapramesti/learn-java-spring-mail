@@ -29,6 +29,8 @@ public class SpringEmailExampleController {
         message.setFrom(MyContants.myEmail);
         message.setSubject("Learn Make Simple Email");
         message.setText("Hai There!");
+        message.setCc("");
+        message.setBcc("");
 
         // Send Message!
         this.javaMailSender.send(message);
